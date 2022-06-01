@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Busca CEP</title>
 </head>
+
 <body>
     <section>
-        <h1>Busca CEP</h1>
-        <input id="cep" type="text" placeholder="Digite seu CEP">
-        <button onclick="buscarCep()">Buscar</button>
-        <p id="texto"></p>
+        <div class="inform-cep">
+            <h1>API CONSULTA CEP</h1>
+            <input class="cep" id="cep" type="text" placeholder="Digite seu CEP">
+            <button onclick="buscarCep()">Buscar CEP</button>
+            <p id="texto"></p>
+        </div>
+        <div class="result-cep">
+            <h1>Cep logradouro</h1>
+            <input  class="logradouro" id="place" type="text">
+            <input class="logradouro" id="district" type="text">
+            <div class="city-cep">
+                <input class="city" id="city" type="text">
+                <input class="state" id="state" type="text">
+            </div>
+        </div>
     </section>
     <script src="./main.js"></script>
 </body>
+
 </html>

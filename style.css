@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --color-blue-primary: #007aff;
+    --color-blue-secondary: #0e55df;
+    --color-blue-tertiary: #00c5ff;
+    --color-pink: #d200a5;
+    --color-background: rgba(208, 208, 212, 0.911);
+    --color-grey-primary: #eaecf1;
+    --color-grey-secondary: #aab6ce;
+    --color-grey-tertiary: grey;
+}
+
+body {
+    height: 100vh;
+    background: var(--color-background);
+}
+
+.inform-cep {
+    text-align: center;
+    margin-top: 10em;
+}
+
+.inform-cep h1 {
+    font-family: Poppins,sans-serif;
+    color: var(--color-blue-primary);
+    font-size: 2.5em;
+}
+
+.inform-cep input {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--color-pink);
+    padding: 10px;
+}
+
+.inform-cep button {
+    height: 40px;
+    width: 130px;
+    background: linear-gradient(90deg,var(--color-blue-tertiary),var(--color-blue-secondary));
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid;
+}
+
+.inform-cep button:hover {
+    background: var(--color-pink);
+}
+
+.result-cep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.result-cep h1 {
+    font-family: var(--font-poppins);
+    font-size: 1em;
+    color: var(--color-pink);
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.logradouro {
+    font-family: var(--font-poppins);
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+    background:var(--color-grey-primary);
+    border: 1px solid var(--color-grey-secondary);
+    padding: 10px;
+    color: var(--color-grey-tertiary);
+}
+
+.city {
+    font-family: var(--font-poppins);
+    height: 40px;
+    width: 280px;
+    border-radius: 20px;
+    background:var(--color-grey-primary);
+    border: 1px solid var(--color-grey-secondary);
+    padding: 10px;
+    color: var(--color-grey-tertiary);
+}
+
+.state {
+    font-family: var(--font-poppins);
+    height: 40px;
+    width: 65px;
+    border-radius: 20px;
+    background:var(--color-grey-primary);
+    border: 1px solid var(--color-grey-secondary);
+    padding: 10px;
+    color: var(--color-grey-tertiary);
+}
