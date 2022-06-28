@@ -52,7 +52,7 @@ body {
 }
 
 .inform-cep button:hover {
-    background: var(--color-pink);
+    background: linear-gradient(90deg,#d200a5,#d200a5);
 }
 
 .result-cep {
