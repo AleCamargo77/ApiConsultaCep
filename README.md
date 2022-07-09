@@ -20,7 +20,7 @@ Inicialmente utilizado HTML e suas tags sem√¢nticas para montagem do corpo da p√
   
  Interface:
   
-![CEP](https://user-images.githubusercontent.com/105398640/176245476-060aa755-1354-43d3-b381-b32ca01ba380.jpg)
+![Cep](https://user-images.githubusercontent.com/105398640/178123136-cca5945d-a7f7-4778-9368-2402b4652361.gif)
 
   
 
