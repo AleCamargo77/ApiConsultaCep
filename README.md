@@ -16,7 +16,7 @@ Desenvolvido com HTML, CSS e JS.
 
 ## 🤔 Funcionalidades e como acessar o projeto ?
 
-Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página. No CSS, utilizado recursos para estilização e efeitos animados para garantir uma experiência ao usuário mais eficaz. Além de criar a aplicação de maneira responsiva, utilizando o processo de Mobile First. E por fim, trabalhado com funções e variáveis, manipulação de DOM e requisição de URL através do método AJAX dentro do Java Script.
+Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página. No CSS, utilizado recursos para estilização e efeitos animados para garantir uma experiência ao usuário mais eficaz. Além de criar a aplicação de maneira responsiva, utilizando o processo de Mobile First. E por fim, trabalhado com funções e variáveis, manipulação de DOM e requisição de URL através do método AJAX dentro do JavaScript.
   
  Interface:
   
@@ -26,4 +26,4 @@ Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da p�
 
 
 
-<p dir="auto">Link para acessar o projeto: <a href="https://github.com/AleCamargo77/ApiConsultaCep.git" rel="nofollow"> Consulta CEP </a></p>
+<p dir="auto">Link para acessar o projeto: <a href="https://alecamargo77.github.io/ApiConsultaCep/" rel="nofollow"> Consulta CEP </a></p>
