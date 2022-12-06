@@ -135,7 +135,11 @@ button {
 }
 
 .inform-cep button:hover {
+<<<<<<< HEAD
   background: var(--color-pink);
+=======
+    background: linear-gradient(90deg,#d200a5,#d200a5);
+>>>>>>> ce0150aba8a0fb38ff497ff56fe116991b384a1a
 }
 
 .result-cep {
