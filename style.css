@@ -98,9 +98,6 @@ body {
   font-size: 18;
 }
 
-button {
-}
-
 .inform-cep {
   text-align: center;
   margin-top: 10em;
@@ -116,11 +113,12 @@ button {
   width: 220px;
   height: 40px;
   border-radius: 20px;
-  border: 1px solid var(--color-pink);
+  border: 1px solid var(--color-blue-primary);
   padding: 10px;
 }
 
-.inform-cep button {
+.inform-cep button,
+#clear {
   height: 40px;
   width: 130px;
   background: linear-gradient(
@@ -132,14 +130,19 @@ button {
   color: #fff;
   border: 1px solid;
   cursor: pointer;
+  transition: 0.7s;
 }
 
 .inform-cep button:hover {
-<<<<<<< HEAD
-  background: var(--color-pink);
-=======
-    background: linear-gradient(90deg,#d200a5,#d200a5);
->>>>>>> ce0150aba8a0fb38ff497ff56fe116991b384a1a
+  box-shadow: inset 200px 0 0 var(--color-blue-secondary);
+}
+
+#clear {
+  opacity: 0.5;
+}
+#clear:hover {
+  opacity: 1;
+  box-shadow: inset 200px 0 0 var(--color-blue-secondary);
 }
 
 .result-cep {
@@ -163,9 +166,10 @@ button {
   width: 350px;
   border-radius: 20px;
   background: var(--color-grey-primary);
-  border: 1px solid var(--color-grey-secondary);
+  border: 1px solid var(--color-blue-primary);
   padding: 10px;
   color: var(--color-grey-tertiary);
+  outline: none;
 }
 
 .city {
@@ -174,9 +178,10 @@ button {
   width: 280px;
   border-radius: 20px;
   background: var(--color-grey-primary);
-  border: 1px solid var(--color-grey-secondary);
+  border: 1px solid var(--color-blue-primary);
   padding: 10px;
   color: var(--color-grey-tertiary);
+  outline: none;
 }
 
 .state {
@@ -185,7 +190,8 @@ button {
   width: 65px;
   border-radius: 20px;
   background: var(--color-grey-primary);
-  border: 1px solid var(--color-grey-secondary);
+  border: 1px solid var(--color-blue-primary);
   padding: 10px;
   color: var(--color-grey-tertiary);
+  outline: none;
 }

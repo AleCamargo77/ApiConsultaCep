@@ -19,9 +19,11 @@
             type="text"
             placeholder="Digite seu CEP"
             autocomplete="off"
+            maxlength="8"
+            size="8"
           />
           <label for="username" class="label">CEP</label>
-          <button onclick="buscarCep()">Buscar CEP</button>
+          <button onclick="loadCep()">Buscar CEP</button>
           <p id="texto"></p>
         </div>
       </div>
@@ -31,7 +33,6 @@
           class="logradouro"
           id="place"
           type="text"
-          autocomplete="off"
           placeholder="Logradouro"
         />
         <input
@@ -43,6 +44,9 @@
         <div class="city-cep">
           <input class="city" id="city" type="text" placeholder="Cidade" />
           <input class="state" id="state" type="text" placeholder="UF" />
+        </div>
+        <div>
+          <button onclick="clearValues()" id="clear">Limpar</button>
         </div>
       </div>
     </section>
