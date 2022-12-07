@@ -18,5 +18,4 @@ function clearValues() {
   document.getElementById("district").value = "";
   document.getElementById("city").value = "";
   document.getElementById("state").value = "";
-  document.getElementById("texto").innerHTML = "";
 }
