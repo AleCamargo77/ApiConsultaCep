@@ -20,21 +20,3 @@ function clearValues() {
   document.getElementById("state").value = "";
   document.getElementById("texto").innerHTML = "";
 }
-
-function loadCep() {
-  let campoCep = document.getElementById("cep").value;
-
-  const ajax = new XMLHttpRequest();
-  ajax.open("GET", "https://viacep.com.br/ws/" + campoCep + "/json/");
-  ajax.send();
-
-  ajax.onload = function () {
-    // TRASNFORMEI TEXTO EM OBJETO
-    let obj = JSON.parse(this.responseText);
-
-    document.getElementById("place").value = `${obj.logradouro}`;
-    document.getElementById("district").value = `${obj.bairro}`;
-    document.getElementById("city").value = `${obj.localidade}`;
-    document.getElementById("state").value = `${obj.uf}`;
-  };
-}
