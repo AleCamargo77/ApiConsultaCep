@@ -1,4 +1,5 @@
 const fillFields = (response) => {
+  clearValues();
   document.getElementById("place").value = `${response.logradouro}`;
   document.getElementById("district").value = `${response.bairro}`;
   document.getElementById("city").value = `${response.localidade}`;
@@ -8,7 +9,7 @@ const fillFields = (response) => {
 // const cepIsValid = (cep) => /^[0-9]+$/.test(cep);
 
 async function loadCep() {
-  // clearValues();
+  clearValues();
   const resultCep = document.getElementById("cep").value;
   const urlApi = `https://viacep.com.br/ws/${resultCep}/json/`;
   // const statusOk = 200;
@@ -26,13 +27,13 @@ async function loadCep() {
     fillFields(response);
   }
 }
-//   else {
-//     document.getElementById("place").value = "CEP incorreto";
-//   }
+// }
+//  else {
+//   document.getElementById("place").value = "CEP incorreto";
+// }
 // }
 
 function clearValues() {
-  document.getElementById("cep").value = "";
   document.getElementById("place").value = "";
   document.getElementById("district").value = "";
   document.getElementById("city").value = "";
