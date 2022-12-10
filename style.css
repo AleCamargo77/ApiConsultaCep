@@ -195,3 +195,7 @@ body {
   color: var(--color-grey-tertiary);
   outline: none;
 }
+
+.error {
+  color: red;
+}

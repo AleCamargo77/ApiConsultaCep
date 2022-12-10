@@ -1,17 +1,35 @@
-async function loadCep() {
-  const resultCep = document.getElementById("cep").value;
-  let req = await fetch(`https://viacep.com.br/ws/${resultCep}/json/`);
-  let response = await req.json();
-
-  // .then((response) => response.json())
-  // .then(function (json) {
+const fillFields = (response) => {
   document.getElementById("place").value = `${response.logradouro}`;
   document.getElementById("district").value = `${response.bairro}`;
   document.getElementById("city").value = `${response.localidade}`;
   document.getElementById("state").value = `${response.uf}`;
-  // })
-  // .catch(() => alert(`${resultCep} é um formato de CEP inválido.`));
+};
+
+// const cepIsValid = (cep) => /^[0-9]+$/.test(cep);
+
+async function loadCep() {
+  // clearValues();
+  const resultCep = document.getElementById("cep").value;
+  const urlApi = `https://viacep.com.br/ws/${resultCep}/json/`;
+  // const statusOk = 200;
+  // if (cepIsValid(cep)) {
+  let request = await fetch(urlApi);
+  let response = await request.json();
+
+  if (response.hasOwnProperty("erro")) {
+    let error = document.getElementById("place");
+    error.value = "CEP não encontrado";
+    error.classList.add("error");
+  } else {
+    let error = document.getElementById("place");
+    error.classList.remove("error");
+    fillFields(response);
+  }
 }
+//   else {
+//     document.getElementById("place").value = "CEP incorreto";
+//   }
+// }
 
 function clearValues() {
   document.getElementById("cep").value = "";
